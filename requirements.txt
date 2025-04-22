@@ -1,0 +1,6 @@
+Flask==2.2.2
+Werkzeug==2.2.2
+Jinja2==3.1.2
+itsdangerous==2.1.2
+click==8.0.4
+gunicorn==23.0.0
