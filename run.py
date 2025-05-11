@@ -12,6 +12,7 @@ HTML_TEMPLATE = '''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini List App</title>
     <style>
         body {{ font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }}
@@ -28,6 +29,16 @@ HTML_TEMPLATE = '''
         .summary {{ margin-top: 24px; }}
         button {{ background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 10px; }}
         h2 {{ font-family: Georgia; color: black; width: 20ch; text-wrap: nowrap; overflow: hidden; animation: typing 2s steps(20) infinite alternate-reverse; @keyframes typing {{ from {{ width: 0ch; }} to {{ width: 20ch; }} }} }}
+        @media (max-width: 700px) {{
+            .container {{ max-width: 98vw; padding: 8px; }}
+            table, th, td {{ font-size: 14px; }}
+            h1 {{ font-size: 1.5em; }}
+        }}
+        @media (max-width: 400px) {{
+            .container {{ padding: 2px; }}
+            th, td {{ padding: 4px; }}
+            h1 {{ font-size: 1.1em; }}
+        }}
     </style>
 </head>
 <body>
@@ -60,6 +71,7 @@ SUMMARY_TEMPLATE = '''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <style>
         body {{ font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }}
@@ -70,6 +82,16 @@ SUMMARY_TEMPLATE = '''
         th {{ background: #f0f0f0; }}
         .actions {{ margin-top: 16px; text-align: center; }}
         .actions a {{ margin: 0 8px; text-decoration: none; color: #007bff; }}
+        @media (max-width: 700px) {{
+            .container {{ max-width: 98vw; padding: 8px; }}
+            table, th, td {{ font-size: 14px; }}
+            h1 {{ font-size: 1.5em; }}
+        }}
+        @media (max-width: 400px) {{
+            .container {{ padding: 2px; }}
+            th, td {{ padding: 4px; }}
+            h1 {{ font-size: 1.1em; }}
+        }}
     </style>
 </head>
 <body>
