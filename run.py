@@ -141,4 +141,4 @@ def category():
     return SUMMARY_TEMPLATE.format(title="Category Summary", col1="Category", rows=rows)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
